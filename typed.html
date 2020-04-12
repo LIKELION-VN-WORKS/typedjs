@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>호치민 1기 해커톤</title>
+    <link rel="stylesheet" href="./typed.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>LIKE LION SAIGON</div>
+      <div>HACKATHON!</div>
+      <div id="typed-strings">
+        <div>멋쟁이 <strong>승태처럼</strong></div>
+        <div>멋쟁이 <strong>현규처럼</strong></div>
+        <div>멋쟁이 <strong>민철처럼</strong></div>
+        <div>멋쟁이 <strong>진성처럼</strong></div>
+        <div>멋쟁이 <strong>익용처럼</strong></div>
+        <div>멋쟁이 <strong>창목처럼</strong></div>
+        <div>멋쟁이 <strong>민선처럼</strong></div>
+        <div>멋쟁이 <strong>송처럼</strong></div>
+        <div>멋쟁이 <strong>은혁처럼</strong></div>
+        <div>멋쟁이 <strong>현승처럼</strong></div>
+        <div>멋쟁이 <strong>현우처럼</strong></div>
+        <div>멋쟁이 <strong>영준처럼</strong></div>
+        <div>멋쟁이 <strong>신우처럼</strong></div>
+        <div>멋쟁이 <strong>보나처럼</strong></div>
+        <div>멋쟁이 <strong>장훈처럼</strong></div>
+        <div>멋쟁이 <strong>병훈처럼</strong></div>
+        <div>멋쟁이 <strong>동기처럼</strong></div>
+        <div>멋쟁이 <strong>가연처럼</strong></div>
+        <div>멋쟁이 <strong>혜령처럼</strong></div>
+        <div>멋쟁이 <strong>강원처럼</strong></div>
+        <div>멋쟁이 <strong>영진처럼</strong></div>
+        <div>멋쟁이 <strong>원석처럼</strong></div>
+        <div>멋쟁이 <strong>오일처럼</strong></div>
+        <div>멋쟁이 <strong>민성처럼</strong></div>
+        <div>멋쟁이 <strong>영준처럼</strong></div>
+      </div>
+      <span id="typed"></span>
+      <div id="demo"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      const typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        smartBackspace: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+      });
+      let time = 7340;
+      let hour = "";
+      let min = "";
+      let sec = "";
+      const addZero = (n) => {
+        return (parseInt(n, 10) < 10 ? "0" : "") + n;
+      };
+      const x = setInterval(() => {
+        hour = parseInt(time / 3600);
+        min = parseInt((time - hour * 3600) / 60);
+        sec = time % 60;
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<span>남은 시간 </span> ${addZero(
+          hour
+        )} <span>시</span> ${addZero(min)} <span>분</span> ${addZero(
+          sec
+        )} <span>초</span>`;
+        time--;
+        if (time < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "해커톤 종료!";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

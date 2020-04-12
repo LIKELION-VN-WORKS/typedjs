@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-image: url(./likelion_hacks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.container div {
+  font-size: 5rem;
+}
+p {
+  font-size: 5rem;
+}
+strong {
+  color: coral;
+  font-size: 8rem;
+}
+
+#demo {
+  font-size: 6rem;
+}
