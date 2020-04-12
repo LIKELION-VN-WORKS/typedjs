@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  background-image: url(./likelion_hacks.jpg);
+  background-image: url(./likelion_hcmc.JPG);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #ffffff;
 }
 
 .container {
@@ -14,8 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff;
-  opacity: 0.7;
+  background: rgba(30, 29, 29, 0.6);
 }
 .container div {
   font-size: 5rem;
