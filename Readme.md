@@ -1,7 +1,5 @@
 # LIKE LION HCMC 1st HACKATHON
 
----
-
 ## Overview
 
 - The first graduate Hackathon of LIKE LION Vietnam.
