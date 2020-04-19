@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-image: url(./likelion_hcmc.JPG);
+  font-family: "East Sea Dokdo", cursive;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -11,23 +12,48 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: black;
-  display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(30, 29, 29, 0.6);
-}
-.container div {
-  font-size: 5rem;
-}
-p {
-  font-size: 5rem;
-}
-strong {
-  color: coral;
-  font-size: 8rem;
+  background: rgba(30, 29, 29, 0.2);
+  padding: 5rem 5rem 10rem 0;
 }
 
+.title,
+.hackathon,
+p,
 #demo {
+  font-size: 5rem;
+}
+
+#typed-strings {
   font-size: 6rem;
+}
+
+/* attendees in typed.js */
+strong {
+  color: coral;
+  font-size: 6rem;
+}
+
+/* typed.js cursor font-size manipulation */
+.typed-cursor {
+  font-size: 6rem;
+}
+
+.hackathon,
+.title {
+  animation: greenblue 5s infinite;
+}
+
+@keyframes greenblue {
+  0% {
+    color: rgb(108, 196, 211);
+  }
+  50% {
+    color: rgb(84, 84, 238);
+  }
+  100% {
+    color: rgb(175, 221, 175);
+  }
 }

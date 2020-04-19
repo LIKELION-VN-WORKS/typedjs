@@ -5,50 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>호치민 1기 해커톤</title>
     <link rel="stylesheet" href="./typed.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div>LIKE LION SAIGON</div>
-      <div>HACKATHON!</div>
+      <div class="title">LIKE LION SAIGON</div>
+      <div class="hackathon">HACKATHON!</div>
       <div id="typed-strings">
-        <div>멋쟁이 <strong>승태처럼</strong></div>
-        <div>멋쟁이 <strong>현규처럼</strong></div>
-        <div>멋쟁이 <strong>민철처럼</strong></div>
-        <div>멋쟁이 <strong>진성처럼</strong></div>
-        <div>멋쟁이 <strong>익용처럼</strong></div>
-        <div>멋쟁이 <strong>창목처럼</strong></div>
-        <div>멋쟁이 <strong>민선처럼</strong></div>
-        <div>멋쟁이 <strong>송처럼</strong></div>
-        <div>멋쟁이 <strong>은혁처럼</strong></div>
-        <div>멋쟁이 <strong>현승처럼</strong></div>
-        <div>멋쟁이 <strong>현우처럼</strong></div>
-        <div>멋쟁이 <strong>영준처럼</strong></div>
-        <div>멋쟁이 <strong>신우처럼</strong></div>
-        <div>멋쟁이 <strong>보나처럼</strong></div>
-        <div>멋쟁이 <strong>장훈처럼</strong></div>
-        <div>멋쟁이 <strong>병훈처럼</strong></div>
-        <div>멋쟁이 <strong>동기처럼</strong></div>
-        <div>멋쟁이 <strong>가연처럼</strong></div>
-        <div>멋쟁이 <strong>혜령처럼</strong></div>
-        <div>멋쟁이 <strong>강원처럼</strong></div>
-        <div>멋쟁이 <strong>영진처럼</strong></div>
-        <div>멋쟁이 <strong>원석처럼</strong></div>
-        <div>멋쟁이 <strong>오일처럼</strong></div>
-        <div>멋쟁이 <strong>민성처럼</strong></div>
-        <div>멋쟁이 <strong>영준처럼</strong></div>
+        <div>
+          <p>멋쟁이</p>
+          <strong> 승태처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>현규처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>민철처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>진성처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>익용처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>창목처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>민선처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>송처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>은혁처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>현승처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>현우처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>영준처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>신우처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>보나처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>장훈처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>병훈처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>동기처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>가연처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>혜령처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>강원처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>영진처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>원석처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>오일처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>민성처럼</strong>
+        </div>
+        <div>
+          <p>멋쟁이</p>
+          <strong>영준처럼</strong>
+        </div>
       </div>
       <span id="typed"></span>
       <div id="demo"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
-      const typed = new Typed("#typed", {
-        stringsElement: "#typed-strings",
-        smartBackspace: true,
-        typeSpeed: 100,
-        backSpeed: 100,
-      });
-      let time = 7340;
+      const auto = () => {
+        const typed = new Typed("#typed", {
+          stringsElement: "#typed-strings",
+          smartBackspace: true,
+          typeSpeed: 100,
+          backSpeed: 150,
+          loop: true,
+          smartBackspace: true,
+          shuffle: true,
+        });
+      };
+      let time = 14400;
       let hour = "";
       let min = "";
       let sec = "";
@@ -71,7 +155,15 @@
           clearInterval(x);
           document.getElementById("demo").innerHTML = "해커톤 종료!";
         }
+        if (addZero(hour) < 7 && addZero(hour) >= 4) {
+          document.getElementById("demo").style.color = "skyblue";
+        } else if (addZero(hour) >= 2 && addZero(hour) < 4) {
+          document.getElementById("demo").style.color = "yellow";
+        } else if (addZero(hour) < 2) {
+          document.getElementById("demo").style.color = "red";
+        }
       }, 1000);
+      auto();
     </script>
   </body>
 </html>
